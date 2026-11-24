@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CampusConnect | Student Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+
+        <div class="dashboard">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Campus<span class="blue">Connect</span></span>
+                </div>
+
+                <p class="menu-title">MAIN MENU</p>
+                <nav>
+                    <a href="#dashboard" class="active"><i class="fa-solid fa-house"></i> Dashboard</a>
+                    <a href="#profile"><i class="fa-solid fa-user"></i> My Profile</a>
+                    <a href="#attendance"><i class="fa-solid fa-calendar-check"></i> Attendance</a>
+                    <a href="#performance"><i class="fa-solid fa-chart-line"></i> Academic Performance</a>
+                    <a href="#subjects"><i class="fa-solid fa-book-open"></i> My Subjects</a>
+                    <a href="#timetable"><i class="fa-solid fa-calendar-days"></i> Timetable</a>
+                    <a href="#assignments"><i class="fa-solid fa-file-lines"></i> Assignments</a>
+                </nav>
+
+                <p class="menu-title">OTHERS</p>
+                <nav>
+                    <a href="#notifications"><i class="fa-solid fa-bell"></i> Notifications <span class="notification-count">3</span></a>
+                    <a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+                    <a href="#settings"><i class="fa-solid fa-gear"></i> Settings</a>
+                </nav>
+
+                <div class="sidebar-bottom">
+                    <div class="help-card">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <h4>Need Help?</h4>
+                        <p>Contact your academic support team.</p>
+                        <a href="mailto:support@example.com">Get Support</a>
+                    </div>
+                    <a href="#dashboard" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content" id="dashboard">
+
+                <!-- TOPBAR -->
+                <header class="topbar">
+                    <div>
+                        <h2>Student Dashboard</h2>
+                        <p>Tuesday, November 24, 2026</p>
+                    </div>
+
+                    <div class="top-actions">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Search here...">
+                        </div>
+                        <a href="#notifications" class="bell">
+                            <i class="fa-regular fa-bell"></i>
+                            <span></span>
+                        </a>
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Student" class="top-avatar">
+                    </div>
+                </header>
+
+                <!-- WELCOME -->
+                <section class="welcome">
+                    <div>
+                        <p class="welcome-label">YOUR LEARNING JOURNEY STARTS HERE</p>
+                        <h1>Welcome back, Nikhil! 👋</h1>
+                        <p>Here's what's happening with your academics today.</p>
+                    </div>
+                    <div class="welcome-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </section>
+
+                <!-- PROFILE -->
+                <section class="profile-card" id="profile">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Nikhil Kumar" class="profile-image">
+                    <div class="profile-info">
+                        <h2>Nikhil Kumar</h2>
+                        <p>B.Tech – Computer Science & Engineering (AI & ML)</p>
+                        <div class="profile-tags">
+                            <span><i class="fa-solid fa-id-card"></i> NIAT2026XXXX</span>
+                            <span><i class="fa-solid fa-graduation-cap"></i> First Year</span>
+                            <span><i class="fa-solid fa-calendar"></i> Semester 1</span>
+                        </div>
+                    </div>
+                    <div class="college-info">
+                        <span>COLLEGE</span>
+                        <h3>NIAT</h3>
+                        <p>Academic Year 2026–2027</p>
+                    </div>
+                </section>
+
+                <!-- STATISTICS -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon purple"><i class="fa-solid fa-calendar-check"></i></div>
+                            <span class="stat-trend">+2.5%</span>
+                        </div>
+                        <h2>92%</h2>
+                        <p>Overall Attendance</p>
+                        <div class="mini-progress"><span style="width:92%"></span></div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon green"><i class="fa-solid fa-award"></i></div>
+                            <span class="stat-trend">+5.2%</span>
+                        </div>
+                        <h2>85%</h2>
+                        <p>Average Marks</p>
+                        <div class="mini-progress green-progress"><span style="width:85%"></span></div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon orange"><i class="fa-solid fa-book"></i></div>
+                            <span class="stat-note">Active</span>
+                        </div>
+                        <h2>06</h2>
+                        <p>Total Subjects</p>
+                        <div class="stat-footer">All subjects enrolled</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-top">
+                            <div class="stat-icon red"><i class="fa-solid fa-file-circle-exclamation"></i></div>
+                            <span class="stat-note red-text">Action needed</span>
+                        </div>
+                        <h2>03</h2>
+                        <p>Pending Assignments</p>
+                        <div class="stat-footer">Complete them on time</div>
+                    </div>
+                </section>
+
+                <!-- ATTENDANCE AND PERFORMANCE -->
+                <section class="two-column">
+
+                    <div class="panel" id="attendance">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Attendance Overview</h3>
+                                <p>Your attendance summary</p>
+                            </div>
+                            <span class="small-badge">This Semester</span>
+                        </div>
+
+                        <div class="attendance-content">
+                            <div class="circle-chart">
+                                <div class="circle-inner">
+                                    <h2>92%</h2>
+                                    <p>Attendance</p>
+                                </div>
+                            </div>
+
+                            <div class="attendance-details">
+                                <div class="legend"><span class="dot present"></span> Present <b>92%</b></div>
+                                <div class="legend"><span class="dot absent"></span> Absent <b>8%</b></div>
+                                <div class="attendance-summary">
+                                    <div><strong>46</strong><span>Present Days</span></div>
+                                    <div><strong>4</strong><span>Absent Days</span></div>
+                                    <div><strong>50</strong><span>Total Days</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel" id="performance">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Academic Performance</h3>
+                                <p>Subject-wise marks</p>
+                            </div>
+                            <span class="small-badge">Latest Results</span>
+                        </div>
+
+                        <div class="performance-list">
+                            <div class="performance-item">
+                                <div><span>Mathematics</span><b>90%</b></div>
+                                <div class="bar"><span style="width:90%"></span></div>
+                            </div>
+                            <div class="performance-item">
+                                <div><span>Physics</span><b>82%</b></div>
+                                <div class="bar"><span style="width:82%"></span></div>
+                            </div>
+                            <div class="performance-item">
+                                <div><span>Python Programming</span><b>95%</b></div>
+                                <div class="bar"><span style="width:95%"></span></div>
+                            </div>
+                            <div class="performance-item">
+                                <div><span>English</span><b>80%</b></div>
+                                <div class="bar"><span style="width:80%"></span></div>
+                            </div>
+                            <div class="performance-item">
+                                <div><span>Chemistry</span><b>78%</b></div>
+                                <div class="bar"><span style="width:78%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SUBJECTS -->
+                <section class="panel subjects-panel" id="subjects">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>My Subjects</h3>
+                            <p>Your enrolled subjects for this semester</p>
+                        </div>
+                        <a href="#subjects" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subjects-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon purple"><i class="fa-solid fa-calculator"></i></div>
+                            <h4>Mathematics</h4>
+                            <p>Dr. Rajesh Kumar</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>95%</b></div>
+                            <div class="bar"><span style="width:95%"></span></div>
+                        </div>
+
+                        <div class="subject-card">
+                            <div class="subject-icon blue-bg"><i class="fa-solid fa-atom"></i></div>
+                            <h4>Physics</h4>
+                            <p>Prof. Suresh</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>90%</b></div>
+                            <div class="bar"><span style="width:90%"></span></div>
+                        </div>
+
+                        <div class="subject-card">
+                            <div class="subject-icon green"><i class="fa-brands fa-python"></i></div>
+                            <h4>Python Programming</h4>
+                            <p>Prof. Anil Kumar</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>96%</b></div>
+                            <div class="bar"><span style="width:96%"></span></div>
+                        </div>
+
+                        <div class="subject-card">
+                            <div class="subject-icon orange"><i class="fa-solid fa-language"></i></div>
+                            <h4>English</h4>
+                            <p>Mrs. Priya</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>88%</b></div>
+                            <div class="bar"><span style="width:88%"></span></div>
+                        </div>
+
+                        <div class="subject-card">
+                            <div class="subject-icon red"><i class="fa-solid fa-flask"></i></div>
+                            <h4>Chemistry</h4>
+                            <p>Dr. Kavitha</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>91%</b></div>
+                            <div class="bar"><span style="width:91%"></span></div>
+                        </div>
+
+                        <div class="subject-card">
+                            <div class="subject-icon teal"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h4>Computer Science</h4>
+                            <p>Prof. Kiran</p>
+                            <div class="subject-bottom"><span>Attendance</span><b>92%</b></div>
+                            <div class="bar"><span style="width:92%"></span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TIMETABLE -->
+                <section class="panel timetable-panel" id="timetable">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Weekly Timetable</h3>
+                            <p>Your class schedule</p>
+                        </div>
+                        <span class="small-badge">Monday – Saturday</span>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>TIME</th>
+                                    <th>MON</th>
+                                    <th>TUE</th>
+                                    <th>WED</th>
+                                    <th>THU</th>
+                                    <th>FRI</th>
+                                    <th>SAT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9:00–10:00</td>
+                                    <td>Mathematics</td>
+                                    <td>Physics</td>
+                                    <td>Python</td>
+                                    <td>English</td>
+                                    <td>Mathematics</td>
+                                    <td>Physics</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00–11:00</td>
+                                    <td>Physics</td>
+                                    <td>Python</td>
+                                    <td>English</td>
+                                    <td>Mathematics</td>
+                                    <td>Chemistry</td>
+                                    <td>Python</td>
+                                </tr>
+                                <tr class="break-row">
+                                    <td>11:00–11:30</td>
+                                    <td colspan="6">☕ BREAK TIME</td>
+                                </tr>
+                                <tr>
+                                    <td>11:30–12:30</td>
+                                    <td>Python</td>
+                                    <td>Mathematics</td>
+                                    <td>Chemistry</td>
+                                    <td>Physics</td>
+                                    <td>English</td>
+                                    <td>Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <td>12:30–1:30</td>
+                                    <td>English</td>
+                                    <td>Chemistry</td>
+                                    <td>Mathematics</td>
+                                    <td>Python</td>
+                                    <td>Physics</td>
+                                    <td>Mathematics</td>
+                                </tr>
+                                <tr class="break-row">
+                                    <td>1:30–2:15</td>
+                                    <td colspan="6">🍽️ LUNCH BREAK</td>
+                                </tr>
+                                <tr>
+                                    <td>2:15–3:15</td>
+                                    <td>Computer Science</td>
+                                    <td>English</td>
+                                    <td>Physics</td>
+                                    <td>Chemistry</td>
+                                    <td>Python Lab</td>
+                                    <td>Library</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- MARKS TABLE -->
+                <section class="panel marks-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Recent Examination Results</h3>
+                            <p>Your latest academic scores</p>
+                        </div>
+                        <a href="#performance" class="view-all">View Results <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>INTERNAL</th>
+                                    <th>ASSIGNMENT</th>
+                                    <th>EXAM</th>
+                                    <th>TOTAL</th>
+                                    <th>GRADE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>18/20</td>
+                                    <td>18/20</td>
+                                    <td>54/60</td>
+                                    <td>90/100</td>
+                                    <td><span class="grade">A+</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>17/20</td>
+                                    <td>16/20</td>
+                                    <td>49/60</td>
+                                    <td>82/100</td>
+                                    <td><span class="grade">A</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Python Programming</td>
+                                    <td>20/20</td>
+                                    <td>19/20</td>
+                                    <td>56/60</td>
+                                    <td>95/100</td>
+                                    <td><span class="grade">O</span></td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>16/20</td>
+                                    <td>17/20</td>
+                                    <td>47/60</td>
+                                    <td>80/100</td>
+                                    <td><span class="grade">A</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- BOTTOM SECTION -->
+                <section class="two-column bottom-section">
+
+                    <div class="panel" id="assignments">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Assignments</h3>
+                                <p>Track your upcoming submissions</p>
+                            </div>
+                            <span class="small-badge">3 Pending</span>
+                        </div>
+
+                        <div class="assignment">
+                            <div class="assignment-icon purple"><i class="fa-solid fa-calculator"></i></div>
+                            <div class="assignment-info">
+                                <h4>Mathematics – Problem Set 3</h4>
+                                <p>Due: November 26, 2026</p>
+                            </div>
+                            <span class="pending">Pending</span>
+                        </div>
+
+                        <div class="assignment">
+                            <div class="assignment-icon green"><i class="fa-brands fa-python"></i></div>
+                            <div class="assignment-info">
+                                <h4>Python – Mini Project</h4>
+                                <p>Due: November 28, 2026</p>
+                            </div>
+                            <span class="pending">Pending</span>
+                        </div>
+
+                        <div class="assignment">
+                            <div class="assignment-icon orange"><i class="fa-solid fa-atom"></i></div>
+                            <div class="assignment-info">
+                                <h4>Physics – Lab Record</h4>
+                                <p>Due: November 30, 2026</p>
+                            </div>
+                            <span class="completed">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="panel" id="notifications">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Recent Notifications</h3>
+                                <p>Stay updated with college news</p>
+                            </div>
+                            <span class="notification-count">3 New</span>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notice-icon blue-bg"><i class="fa-solid fa-file-lines"></i></div>
+                            <div>
+                                <h4>Internal Exams Announced</h4>
+                                <p>Check the examination schedule.</p>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notice-icon orange"><i class="fa-solid fa-bullhorn"></i></div>
+                            <div>
+                                <h4>Technical Workshop</h4>
+                                <p>Registration is now open!</p>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notice-icon green"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div>
+                                <h4>Attendance Updated</h4>
+                                <p>Your attendance report is ready.</p>
+                                <span>2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ANNOUNCEMENTS -->
+                <section class="panel announcements" id="announcements">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>College Announcements</h3>
+                            <p>Latest updates from your college</p>
+                        </div>
+                        <a href="#announcements" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="announcement-grid">
+                        <div class="announcement-card">
+                            <span class="announcement-tag purple-tag">Examination</span>
+                            <h4>Internal Examination Schedule Released</h4>
+                            <p>The internal examination timetable is now available. Check your academic calendar.</p>
+                            <span class="announcement-date">November 24, 2026</span>
+                        </div>
+
+                        <div class="announcement-card">
+                            <span class="announcement-tag green-tag">Workshop</span>
+                            <h4>Technical Workshop Registration Open</h4>
+                            <p>Register for upcoming technical workshops and improve your practical skills.</p>
+                            <span class="announcement-date">November 23, 2026</span>
+                        </div>
+
+                        <div class="announcement-card">
+                            <span class="announcement-tag orange-tag">Events</span>
+                            <h4>Annual College Fest Coming Soon!</h4>
+                            <p>Get ready for exciting competitions, cultural events and technical activities.</p>
+                            <span class="announcement-date">November 21, 2026</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FOOTER -->
+                <footer>
+                    <p>© 2026 CampusConnect. All Rights Reserved.</p>
+                    <p>Made with <span class="heart">♥</span> for Students</p>
+                </footer>
+
+            </main>
+        </div>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
